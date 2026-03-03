@@ -1,22 +1,24 @@
 /*
-* created by: Ian Smith-chao
-* created on: Feb 2026
+* Created by: Ian Smith-Chao
+* Created on: Feb 2026
 * The blink program, with a breadboard
 */
 
-// set the variable to 1000
-int pin5 = 5;
+// Set the variable to 1000
+const int LED_PIN = 5;
 
 void setup() {
   // initialize digital pin LED_Builtin as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(LED_PIN, OUTPUT);
 }
 
-void loop()
-{
-  // the loop function runs over and over again forever
-  digitalWrite(pin5, HIGH); // turn LED on
-  delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(pin5, LOW); // turn LED off
-  delay(1000); // Wait for 1000 millisecond(s)
+// Main loop.
+void loop() {
+  // Turn the pin on (HIGH is the voltage level) for 1000 ms.
+  digitalWrite(LED_PIN, HIGH);
+  delay(1000);
+
+  // Turn the pin on (HIGH is the voltage level) for 1000 ms.
+  digitalWrite(LED_PIN, LOW);
+  delay(1000);
 }
