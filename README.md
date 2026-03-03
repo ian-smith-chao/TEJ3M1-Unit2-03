@@ -1,1 +1,22 @@
-# TEJ3M1-Unit2-03
+/*
+* created by: Ian Smith-chao
+* created on: Feb 2026
+* The blink program, with breadboard
+*/
+
+//set the variable to 1000
+int pin5 = 5;
+
+void setup() {
+  //initialze digital pin LED_Builtin as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+  // the loop function runs over and over again forever
+  digitalWrite(pin5, HIGH); // turn LED on
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(pin5, LOW); //turn LED off
+  delay(1000); // Wait for 1000 millisecond(s)
+}
