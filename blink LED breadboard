@@ -4,11 +4,11 @@
 * The blink program, with breadboard
 */
 
-//set the variable to 1000
+// set the variable to 1000
 int pin5 = 5;
 
 void setup() {
-  //initialze digital pin LED_Builtin as an output.
+  // initialze digital pin LED_Builtin as an output.
   pinMode(LED_BUILTIN, OUTPUT);
 }
 
@@ -17,6 +17,6 @@ void loop()
   // the loop function runs over and over again forever
   digitalWrite(pin5, HIGH); // turn LED on
   delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(pin5, LOW); //turn LED off
+  digitalWrite(pin5, LOW); // turn LED off
   delay(1000); // Wait for 1000 millisecond(s)
 }
